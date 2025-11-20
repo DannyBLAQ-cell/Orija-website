@@ -69,7 +69,7 @@ hustlers,dreamers and does who make the everyday economy thrive.</p>
       className="flex justify-center shrink-0"
     >
       <img
-        src="/src/assets/images/founder.png"
+        src="/src/assets/images/dread-img.jpg"
         alt="Founder"
         className="w-64 sm:w-80 lg:w-[420px] rounded-xl shadow-2xl object-cover"
       />

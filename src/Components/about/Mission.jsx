@@ -17,7 +17,7 @@ const Mission = () => {
 </motion.div>
 
 {/* Mission + Vision Container */}
-<div className="container mx-auto max-w-6xl px-6 flex flex-col gap-12">
+<div className="container mx-auto max-w-6xl px-6 flex flex-col gap-12 items-center justify-center">
 
   {/* Mission */}
   <motion.div
@@ -32,7 +32,7 @@ const Mission = () => {
 
     <div className="border border-primary shadow-xl rounded-xl p-6 bg-white/40 backdrop-blur-sm hover:scale-105 transition duration-300 ease-in-out">
       <p className="text-neutral-600 leading-relaxed">
-        To empower everyday hustlers and small businesses with a safe, social, and
+        To empower everyday hustlers and small businesses with a safe, social, and <br />
         transparent way to buy, sell, and build trust online.
       </p>
     </div>
@@ -47,7 +47,7 @@ const Mission = () => {
   >
     <div className="border border-primary shadow-xl rounded-xl p-6 bg-white/40 backdrop-blur-sm hover:scale-105 transition duration-300 ease-in-out order-2 md:order-1">
       <p className="text-neutral-600 leading-relaxed">
-        To become the most trusted digital market for emerging economies — connecting
+        To become the most trusted digital market for emerging economies — connecting <br />
         people, products, and passion through technology.
       </p>
     </div>

@@ -70,8 +70,8 @@ const Story = () => {
         {events.map((e, i) => (
           <div key={i} className="grid md:grid-cols-3 gap-6 items-center">
 
-            {/* LEFT (Desktop) */}
-            <div className={`${i % 2 === 0 ? "md:text-right md:pr-6" : "hidden md:block"}`}>
+            {/* LEFT (Desktop) - hidden on mobile */}
+            <div className={`hidden md:block ${i % 2 === 0 ? "md:text-right md:pr-6" : ""}`}>
               {i % 2 === 0 && (
                 <motion.div
                   initial={{ opacity: 0, x: -80 }}
@@ -94,8 +94,8 @@ const Story = () => {
               />
             </div>
 
-            {/* RIGHT (Desktop) */}
-            <div className={`${i % 2 !== 0 ? "md:text-left md:pl-6" : "hidden md:block"}`}>
+            {/* RIGHT (Desktop) - hidden on mobile */}
+            <div className={`hidden md:block ${i % 2 !== 0 ? "md:text-left md:pl-6" : ""}`}>
               {i % 2 !== 0 && (
                 <motion.div
                   initial={{ opacity: 0, x: 80 }}

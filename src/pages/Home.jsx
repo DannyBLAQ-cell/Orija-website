@@ -7,11 +7,14 @@ import Footer from "../Components/common/Footer";
 const Home = () => {
   return (
     <>
+    <div className='bg-white'>
+
+   
     <Nav/>
     <Hero/>
     {/* <Works/> */}
     <About/>
-    <Footer/>
+    <Footer/> </div>
     </>
   )
 }

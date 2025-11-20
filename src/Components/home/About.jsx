@@ -5,8 +5,8 @@ import { Check, Star, ShoppingBag, MessageCircle, Shield, TrendingUp, Users, Pac
 const About = () => {
   return (
 <>
-<div className='flex  '>
-<div className='flex flex-col justify-center items-center gap-10 pt-40 bg-gray-50 pb-40 z-20 '>
+<div className='flex flex-col-reverse justify-center items-center'>
+<div className='flex flex-col  items-center gap-10 pt-40 bg-gray-50 pb-40  '>
     <motion.h1>
  <h1 className=' text-5xl md:text-7xl primary font-bold'>What Is Orija?</h1>
 
@@ -48,9 +48,20 @@ street market in one app
    
 </div>
 
- <div>
+ <div >
 
-<img src="/src/assets/images/4.jpg" alt="" className='h-160 w-210 rounded-2xl absolute z-1 right-[-5]'/>
+<motion.img src="/src/assets/images/4-Photoroom.png" alt="" 
+className='h-auto h-160 w-210 rounded-2xl   '
+
+  animate={{
+    y: [0, -15, 0]
+  }}
+  transition={{
+    duration: 3,
+    repeat: Infinity,
+    ease: "easeInOut"
+  }}
+/>
    </div>
 </div>
 
@@ -132,16 +143,16 @@ className='  pt-10 pb-40 bg-gray-50'>
    
 
 
-<div className="flex flex-col-reverse md:flex-row items-center justify-center gap-12 md:gap-20 pt-20 px-6">
+<div className="flex flex-col-reverse md:flex-row items-center justify-center md: pt-20 px-6">
 
   {/* LEFT SIDE TEXT */}
   <motion.div
     initial={{ x: -200, opacity: 0 }}
     whileInView={{ x: 0, opacity: 1 }}
     transition={{ ease: "easeInOut", duration: 0.8 }}
-    className="flex flex-col gap-5 md:gap-6"
+    className="flex flex-col gap-5 md:gap-6 md:ml-45"
   >
-    <h1 className="text-3xl md:text-5xl font-medium primary">
+    <h1 className="text-3xl md:text-5xl font-medium primary ">
       Easy Listing
     </h1>
 
@@ -179,12 +190,12 @@ className='  pt-10 pb-40 bg-gray-50'>
     initial={{ x: 200, opacity: 0 }}
     whileInView={{ x: 0, opacity: 1 }}
     transition={{ ease: "easeInOut", duration: 1 }}
-    className="w-full max-w-sm md:max-w-md"
+    className=""
   >
     <img
-      src="/src/assets/images/4.png"
+      src="/src/assets/images/5-photoroom.png"
       alt="Listing mockup"
-      className="rounded-xl w-full h-auto"
+      className="rounded-xl w-210 h-160 h-auto "
     />
   </motion.div>
 
@@ -192,19 +203,19 @@ className='  pt-10 pb-40 bg-gray-50'>
 {/* orivault */}
    
 
- <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-24 pt-20 px-6">
+ <div className="flex flex-col md:flex-row items-center justify-center  md: pt-20 px-6">
 
       {/* LEFT IMAGE */}
       <motion.div
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 1 }}
-        className="w-full max-w-sm md:max-w-md"
+        className=" "
       >
         <img
-          src="/src/assets/images/Orivault.png"
+          src="/src/assets/images/3-1-Photoroom.png"
           alt="Orivault"
-          className="w-full h-auto rounded-xl shadow-2xl"
+          className="w-210 h-160 h-auto rounded-xl hover hover: cursor-pointer "
         />
       </motion.div>
 
@@ -213,11 +224,11 @@ className='  pt-10 pb-40 bg-gray-50'>
         initial={{ x: 200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.8 }}
-        className="flex flex-col gap-6"
+        className="flex flex-col gap-6 "
       >
         <h1 className="text-3xl md:text-5xl font-medium primary leading-snug">
-          Secure Payments with <br />
-          <span className="">OriVault</span>
+          Secure Payments with  <span className="">OriVault</span><br />
+         
         </h1>
 
         <p className="tertiary text-base md:text-lg leading-relaxed">
@@ -253,14 +264,14 @@ className='  pt-10 pb-40 bg-gray-50'>
     </div>
 {/* message */}
 
-<div className="flex flex-col-reverse md:flex-row items-center justify-center gap-12 md:gap-20 pt-20 px-6">
+<div className="flex flex-col-reverse md:flex-row items-center justify-center gap-12 md:gap-20 pt-20 px-6 md:m-auto">
 
   {/* LEFT SIDE TEXT */}
   <motion.div
     initial={{ x: -200, opacity: 0 }}
     whileInView={{ x: 0, opacity: 1 }}
     transition={{ ease: "easeInOut", duration: 0.8 }}
-    className="flex flex-col gap-5 md:gap-6"
+    className="flex flex-col gap-5 md:gap-6 md:ml-45"
   >
     <h1 className="text-3xl md:text-5xl font-medium primary">
      Built-in Messaging
@@ -301,12 +312,12 @@ all within the app.
     initial={{ x: 200, opacity: 0 }}
     whileInView={{ x: 0, opacity: 1 }}
     transition={{ ease: "easeInOut", duration: 1 }}
-    className="w-full max-w-sm md:max-w-md"
+    className=""
   >
     <img
-      src="/src/assets/images/4.png"
+      src="/src/assets/images/1-Photoroom.png"
       alt="Listing mockup"
-      className="rounded-xl w-full h-auto"
+      className="rounded-xl w-210 h-160 h-auto"
     />
   </motion.div>
 

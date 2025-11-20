@@ -6,113 +6,106 @@ import { useRef } from "react";
 const Empower = () => {
 
 
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end end"],
-  });
+  // const ref = useRef(null);
+  // const { scrollYProgress } = useScroll({
+  //   target: ref,
+  //   offset: ["start start", "end end"],
+  // });
 
-  const cards = [
-    {
-      title: "Empowering Everyday Hustlers",
+  // const cards = [
+  //   {
+  //     title: "Empowering Everyday Hustlers",
    
-      color: "from-pink-500 to-rose-600",
-      images: [
-        // "/images/graffiti1.png",
-        // "/src/assets/images/dread-img.png",
-        "/src/assets/images/city.png",
-        "/src/assets/images/Logo.png",
-        "/src/assets/images/office.jpg",
-        "/src/assets/images/wall.jpg",
-        "/src/assets/images/wall.jpg",
-        "/src/assets/images/graffiti.jpg",
-      ],
-    },
-    {
+  //     color: "from-pink-500 to-rose-600",
+  //     images: [
+  //       // "/images/graffiti1.png",
+  //       // "/src/assets/images/dread-img.png",
+  //       "/src/assets/images/city.png",
+  //       "/src/assets/images/Logo.png",
+  //       "/src/assets/images/office.jpg",
+  //       "/src/assets/images/wall.jpg",
+  //       "/src/assets/images/wall.jpg",
+  //       "/src/assets/images/graffiti.jpg",
+  //     ],
+  //   },
+  //   {
      
-      text: "Buyers and sellers can transact with confidence through OriVault escrow",
-      color: "from-purple-500 to-indigo-600",
-      images: [
-      "/src/assets/images/city.png",
-        "/src/assets/images/random.jpg",
-        "/src/assets/images/chat.png",
-        "/src/assets/images/chat.png",
-        "/src/assets/images/pic-2.jpg",
-        "/src/assets/images/pic.jpg",
-      ],
-    },
-    {
+  //     text: "Buyers and sellers can transact with confidence through OriVault escrow",
+  //     color: "from-purple-500 to-indigo-600",
+  //     images: [
+  //     "/src/assets/images/city.png",
+  //       "/src/assets/images/random.jpg",
+  //       "/src/assets/images/chat.png",
+  //       "/src/assets/images/chat.png",
+  //       "/src/assets/images/pic-2.jpg",
+  //       "/src/assets/images/pic.jpg",
+  //     ],
+  //   },
+  //   {
     
-      text: "Local sellers can finally build trust and reputation online",
-      color: "from-blue-500 to-cyan-500",
-      images: [
-     "/src/assets/images/dread-img.jpg",
-        "/src/assets/images/Orivault.png",
-        "/src/assets/images/Orivault.png",
-        "/src/assets/images/rand.jpg",
-        "/src/assets/images/pic-4.jpg",
-        "/src/assets/images/pic-3.jpg",
-      ],
-    },
-    {
-      text: "Thousands of small bussinesses can now reach new customers",
+  //     text: "Local sellers can finally build trust and reputation online",
+  //     color: "from-blue-500 to-cyan-500",
+  //     images: [
+  //    "/src/assets/images/dread-img.jpg",
+  //       "/src/assets/images/Orivault.png",
+  //       "/src/assets/images/Orivault.png",
+  //       "/src/assets/images/rand.jpg",
+  //       "/src/assets/images/pic-4.jpg",
+  //       "/src/assets/images/pic-3.jpg",
+  //     ],
+  //   },
+  //   {
+  //     text: "Thousands of small bussinesses can now reach new customers",
   
-      color: "from-emerald-500 to-green-600",
-      images: [
-         "/src/assets/images/marketplace.png",
-        "/src/assets/images/hero.png",
-        "/src/assets/images/city.png",
-        "/src/assets/images/pic-6.jpg",
-        "/src/assets/images/pic-5.jpg",
-        "/src/assets/images/pic-5.jpg",
-      ],
-    },
-  ];
+  //     color: "from-emerald-500 to-green-600",
+  //     images: [
+  //        "/src/assets/images/marketplace.png",
+  //       "/src/assets/images/hero.png",
+  //       "/src/assets/images/city.png",
+  //       "/src/assets/images/pic-6.jpg",
+  //       "/src/assets/images/pic-5.jpg",
+  //       "/src/assets/images/pic-5.jpg",
+  //     ],
+  //   },
+  // ];
   return (
 <>
 
- <section ref={ref} className="relative bg-gray-50 text-white mb-40">
-  <div className="container mx-auto px-6 flex flex-col items-center gap-20 py-20">
-    {cards.map((card, i) => (
-      <motion.div
-        key={i}
-        initial={{ opacity: 0, y: 50, scale: 0.95 }}
-        whileInView={{ opacity: 1, y: 0, scale: 1 }}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.8, ease: "easeInOut" }}
-        className={`w-full max-w-4xl h-[80vh] rounded-3xl shadow-2xl bg-gradient-to-br ${card.color} p-10 flex flex-col items-center justify-center text-center relative overflow-hidden`}
-      >
-        {/* Scattered images */}
-        {card.images.map((img, idx) => {
-          const randomX = Math.random() * 80 + 10; // 10–90%
-          const randomY = Math.random() * 70 + 10; // 10–80%
-          const randomRotate = Math.random() * 40 - 20; // -20°–20°
-          const randomSize = Math.random() * 80 + 80; // 80–160px
+ <section className="w-full bg-secondary text-white py-24 px-6">
+      <div className="max-w-5xl mx-auto text-center space-y-10">
+        
+        {/* Title */}
+        <h2 className="text-4xl md:text-6xl font-extrabold leading-tight">
+          Empowering Everyday Hustlers
+        </h2>
 
-          return (
-            <img
-              key={idx}
-              src={img}
-              alt=""
-              className="absolute rounded-xl shadow-lg"
-              style={{
-                top: `${randomY}%`,
-                left: `${randomX}%`,
-                width: `${randomSize}px`,
-                transform: `rotate(${randomRotate}deg)`,
-              }}
-            />
-          );
-        })}
+        {/* Body */}
+        <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-3xl mx-auto">
+          From side hustles to full-time businesses, Orija gives people the <br />
+          platform, tools, and trust they need to succeed in the digital economy. <br />
+          Thousands of small businesses can now reach new customers. Buyers and <br />
+          sellers can transact with confidence through Orivalt's escrow. Local <br />
+          sellers can finally build trust and reputation online. <br />
+          <br /><br />
+          We are redefining what it means to go to market — not just a place to sell, 
+          but a place to belong.
+        </p>
 
-        <div className="relative z-10 bg-black/40 backdrop-blur-md px-6 py-4 rounded-xl">
-          <h2 className="text-4xl font-bold mb-3">{card.title}</h2>
-          <p className="text-2xl text-gray-100 font-bold">{card.text}</p>
-        </div>
-      </motion.div>
-    ))}
-  </div>
-</section>
+        {/* CTA */}
+        <button
+          className="
+            bg-white text-indigo-700 
+            px-8 py-4 rounded-2xl 
+            text-lg font-semibold 
+            shadow-xl hover:shadow-2xl 
+            transition-all hover:scale-105
+          "
+        >
+          Join the Orija movement — Download the app
+        </button>
+      </div>
+    </section>
+
     <div className=' relative bg-primary flex justify-center items-center flex-col gap-5 pb-30 pt-10 '>
               <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-transparent pointer-events-none" />
 
