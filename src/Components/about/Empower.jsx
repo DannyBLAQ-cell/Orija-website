@@ -68,44 +68,84 @@ const Empower = () => {
   //     ],
   //   },
   // ];
+
+  const float = {
+  animate: {
+    y: [0, -20, 0],
+    rotate: [0, 2, -2, 0],
+    transition: {
+      duration: 6,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  },
+};
+
   return (
 <>
 
- <section className="w-full bg-secondary text-white py-24 px-6">
-      <div className="max-w-5xl mx-auto text-center space-y-10">
-        
-        {/* Title */}
-        <h2 className="text-4xl md:text-6xl font-extrabold leading-tight">
+ 
+    <section className="relative py-32 bg-white overflow-hidden mb-40 mt-30">
+      {/* Floating scattered images */}
+      <motion.img
+        src="/src/assets/images/graffiti.jpg"
+        variants={float}
+        animate="animate"
+        className="hidden md:block absolute top-10 left-10 w-40 h-40 object-cover rounded-2xl shadow-xl"
+      />
+
+      <motion.img
+        src="/src/assets/images/city.png"
+        variants={float}
+        animate="animate"
+        className="hidden md:block absolute top-1/2 -translate-y-1/2 left-0 w-48 h-48 object-cover rounded-3xl shadow-lg"
+      />
+
+      <motion.img
+        src="/src/assets/images/pic-6.jpg"
+        variants={float}
+        animate="animate"
+        className="hidden md:block absolute bottom-10 left-24 w-36 h-36 object-cover rounded-2xl shadow-md"
+      />
+
+      <motion.img
+        src="/src/assets/images/wall.jpg"
+        variants={float}
+        animate="animate"
+        className="hidden md:block absolute top-24 right-10 w-44 h-44 object-cover rounded-3xl shadow-xl"
+      />
+
+      <motion.img
+        src="/src/assets/images/pic-4.jpg"
+        variants={float}
+        animate="animate"
+        className="hidden md:block absolute bottom-20 right-0 w-40 h-40 object-cover rounded-2xl shadow-lg"
+      />
+
+      {/* Main content */}
+      <div className="relative z-10 max-w-3xl mx-auto text-center px-6">
+        <h2 className="text-4xl md:text-5xl font-bold mb-6">
           Empowering Everyday Hustlers
         </h2>
 
-        {/* Body */}
-        <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-3xl mx-auto">
-          From side hustles to full-time businesses, Orija gives people the <br />
-          platform, tools, and trust they need to succeed in the digital economy. <br />
-          Thousands of small businesses can now reach new customers. Buyers and <br />
-          sellers can transact with confidence through Orivalt's escrow. Local <br />
-          sellers can finally build trust and reputation online. <br />
-          <br /><br />
-          We are redefining what it means to go to market — not just a place to sell, 
-          but a place to belong.
+        <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-10">
+          From side hustles to full-time businesses, Orija gives people the
+          platform, tools, and trust they need to succeed in the digital
+          economy. Thousands of small businesses can now reach new customers.
+          Buyers and sellers can transact with confidence through Orivalt's
+          escrow. Local sellers can finally build trust and reputation online.
+          We are redefining what it means to go to market—not just a place to
+          sell, but a place to belong.
         </p>
 
-        {/* CTA */}
-        <button
-          className="
-            bg-white text-indigo-700 
-            px-8 py-4 rounded-2xl 
-            text-lg font-semibold 
-            shadow-xl hover:shadow-2xl 
-            transition-all hover:scale-105
-          "
+        <a
+          href="#download"
+          className="inline-block px-8 py-4 bg-black text-white rounded-xl text-lg font-semibold shadow-xl hover:opacity-90 transition"
         >
-          Join the Orija movement — Download the app
-        </button>
+          Join the Orija Movement — Download the App
+        </a>
       </div>
     </section>
-
     <div className=' relative bg-primary flex justify-center items-center flex-col gap-5 pb-30 pt-10 '>
               <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-transparent pointer-events-none" />
 

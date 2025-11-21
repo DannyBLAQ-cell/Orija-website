@@ -59,7 +59,11 @@ const ReviewSlider = () => {
   return (
     <section className="w-full py-12 bg-white">
       <div className="container mx-auto px-6 max-w-7xl">
-        <h2 className="text-3xl md:text-5xl font-bold text-center mb-3 primary">Loved by Entrepreneurs</h2>
+        <motion.h2 
+          initial={{ y:-200, opacity:0}}
+    whileInView={{y:0, opacity:1}}
+    transition={{ease:'easeInOut', duration:0.8, }}
+        className="text-3xl md:text-5xl font-bold text-center mb-3 primary">Loved by Entrepreneurs</motion.h2>
 <p className='text-center tertiary pb-10'>See what our community has to say about their succes on Orija</p>
         <div className="space-y-6">
           {/* first row (slower) */}
