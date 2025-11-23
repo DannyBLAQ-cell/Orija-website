@@ -1,6 +1,18 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import Mission from './Mission'
+
+const float = {
+  animate: {
+    y: [0, -20, 0],
+    rotate: [0, 2, -2, 0],
+    transition: {
+      duration: 6,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  },
+};
 const Hero = () => {
   return (
  <>
@@ -35,7 +47,7 @@ hustlers,dreamers and does who make the everyday economy thrive.</p>
 
    </div> */}
 
-<div className="bg-white px-6 sm:px-10 py-20">
+<div className="bg-white px-6 sm:px-10 py-35">
   <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-16">
 
     {/* LEFT TEXT */}
@@ -47,7 +59,7 @@ hustlers,dreamers and does who make the everyday economy thrive.</p>
     >
       <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold primary leading-tight">
         Building Africa's <br />
-        Most Trusted <br />
+        Most Trusted 
         Social <br />
         <i>Marketplace</i>
       </h1>
@@ -69,7 +81,7 @@ hustlers,dreamers and does who make the everyday economy thrive.</p>
       className="flex justify-center shrink-0"
     >
       <img
-        src="/src/assets/images/dread-img.jpg"
+        src="/images/dread-img.jpg"
         alt="Founder"
         className="w-64 sm:w-80 lg:w-[420px] rounded-xl shadow-2xl object-cover"
       />
@@ -77,7 +89,7 @@ hustlers,dreamers and does who make the everyday economy thrive.</p>
   </div>
 </div>
 <div className='bg-white pb-40'>
-<div className="relative bg-[url('/src/assets/images/city.png')] bg-cover bg-center h-screen ">
+<div className="relative bg-[url('/images/city.png')] bg-cover bg-center h-screen ">
   <div className="absolute inset-0 bg-white/10 backdrop-blur-[3px] pb-150"></div>
   <motion.div 
     initial={{scale:0, opacity:0}}

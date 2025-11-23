@@ -15,12 +15,12 @@ const Market = () => {
     <p className='text-center text-neutral-500 tertiary'>Powerful features designed to help you grow faster and sell more</p>
     </motion.div>
    
-    <div className='flex gap-40 justify-center pt-35 mb-40'>
+    <div className='flex  justify-center pt-35 mb-40'>
 <motion.div 
   initial={{ x:-200, opacity:0}}
     whileInView={{x:0, opacity:1}} 
     transition={{ease:'easeInOut', duration:0.8, }}
-className='flex gap-5 flex-col '>
+className='flex gap-5 flex-col md:ml-40 '>
 <h1 className='text-5xl font-medium  primary'>Marketplace Features</h1>
 <p className='text-neutral-500 text-medium'>
     Everything you need to showcase your products and reach <br />
@@ -62,12 +62,18 @@ className='flex gap-5 flex-col '>
 </ motion.div>
 
 <motion.div
-  initial={{ x:200, opacity:0}}
-    whileInView={{x:0, opacity:1}}
-    transition={{ease:'easeInOut', duration:1, }}
->
-    <img src="/src/assets/images/marketplace.png" alt=""  className='w-100 h-100 rounded-xl shadow-2xl' />
-</motion.div >
+    initial={{ x: 200, opacity: 0 }}
+    whileInView={{ x: 0, opacity: 1 }}
+    transition={{ ease: "easeInOut", duration: 1 }}
+    className=""
+  >
+    <img
+      src="/images/5-Photoroom.png"
+      alt="Listing mockup"
+      className="rounded-xl w-210 h-160 h-auto "
+    />
+  </motion.div>
+
    </div>
 
  

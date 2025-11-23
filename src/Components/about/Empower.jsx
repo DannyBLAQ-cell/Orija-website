@@ -2,110 +2,85 @@ import React from 'react'
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-
+const float = {
+  animate: {
+    y: [0, -20, 0],
+    rotate: [0, 2, -2, 0],
+    transition: {
+      duration: 6,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  },
+};
 const Empower = () => {
 
 
-  // const ref = useRef(null);
-  // const { scrollYProgress } = useScroll({
-  //   target: ref,
-  //   offset: ["start start", "end end"],
-  // });
-
-  // const cards = [
-  //   {
-  //     title: "Empowering Everyday Hustlers",
-   
-  //     color: "from-pink-500 to-rose-600",
-  //     images: [
-  //       // "/images/graffiti1.png",
-  //       // "/src/assets/images/dread-img.png",
-  //       "/src/assets/images/city.png",
-  //       "/src/assets/images/Logo.png",
-  //       "/src/assets/images/office.jpg",
-  //       "/src/assets/images/wall.jpg",
-  //       "/src/assets/images/wall.jpg",
-  //       "/src/assets/images/graffiti.jpg",
-  //     ],
-  //   },
-  //   {
-     
-  //     text: "Buyers and sellers can transact with confidence through OriVault escrow",
-  //     color: "from-purple-500 to-indigo-600",
-  //     images: [
-  //     "/src/assets/images/city.png",
-  //       "/src/assets/images/random.jpg",
-  //       "/src/assets/images/chat.png",
-  //       "/src/assets/images/chat.png",
-  //       "/src/assets/images/pic-2.jpg",
-  //       "/src/assets/images/pic.jpg",
-  //     ],
-  //   },
-  //   {
-    
-  //     text: "Local sellers can finally build trust and reputation online",
-  //     color: "from-blue-500 to-cyan-500",
-  //     images: [
-  //    "/src/assets/images/dread-img.jpg",
-  //       "/src/assets/images/Orivault.png",
-  //       "/src/assets/images/Orivault.png",
-  //       "/src/assets/images/rand.jpg",
-  //       "/src/assets/images/pic-4.jpg",
-  //       "/src/assets/images/pic-3.jpg",
-  //     ],
-  //   },
-  //   {
-  //     text: "Thousands of small bussinesses can now reach new customers",
   
-  //     color: "from-emerald-500 to-green-600",
-  //     images: [
-  //        "/src/assets/images/marketplace.png",
-  //       "/src/assets/images/hero.png",
-  //       "/src/assets/images/city.png",
-  //       "/src/assets/images/pic-6.jpg",
-  //       "/src/assets/images/pic-5.jpg",
-  //       "/src/assets/images/pic-5.jpg",
-  //     ],
-  //   },
-  // ];
   return (
 <>
 
- <section className="w-full bg-secondary text-white py-24 px-6">
-      <div className="max-w-5xl mx-auto text-center space-y-10">
-        
-        {/* Title */}
-        <h2 className="text-4xl md:text-6xl font-extrabold leading-tight">
+  <section className="relative py-32 bg-white overflow-hidden">
+      {/* Floating scattered images */}
+      <motion.img
+        src="/images/wall.jpg"
+        variants={float}
+        animate="animate"
+        className="hidden md:block absolute top-10 left-10 w-40 h-40 object-cover rounded-2xl shadow-xl"
+      />
+
+      <motion.img
+        src="/images/graffiti.jpg"
+        variants={float}
+        animate="animate"
+        className="hidden md:block absolute top-1/2 -translate-y-1/2 left-0 w-48 h-48 object-cover rounded-3xl shadow-lg"
+      />
+
+      <motion.img
+        src="/images/pic-6.jpg"
+        variants={float}
+        animate="animate"
+        className="hidden md:block absolute bottom-10 left-24 w-36 h-36 object-cover rounded-2xl shadow-md"
+      />
+
+      <motion.img
+        src="/images/pic-3.jpg"
+        variants={float}
+        animate="animate"
+        className="hidden md:block absolute top-24 right-10 w-44 h-44 object-cover rounded-3xl shadow-xl"
+      />
+
+      <motion.img
+        src="/images/pic-4.jpg"
+        variants={float}
+        animate="animate"
+        className="hidden md:block absolute bottom-20 right-0 w-40 h-40 object-cover rounded-2xl shadow-lg"
+      />
+
+      {/* Main content */}
+      <div className="relative z-10 max-w-3xl mx-auto text-center px-6">
+        <h2 className="text-4xl md:text-5xl font-bold mb-6">
           Empowering Everyday Hustlers
         </h2>
 
-        {/* Body */}
-        <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-3xl mx-auto">
-          From side hustles to full-time businesses, Orija gives people the <br />
-          platform, tools, and trust they need to succeed in the digital economy. <br />
-          Thousands of small businesses can now reach new customers. Buyers and <br />
-          sellers can transact with confidence through Orivalt's escrow. Local <br />
-          sellers can finally build trust and reputation online. <br />
-          <br /><br />
-          We are redefining what it means to go to market — not just a place to sell, 
-          but a place to belong.
+        <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-10">
+          From side hustles to full-time businesses, Origia gives people the
+          platform, tools, and trust they need to succeed in the digital
+          economy. Thousands of small businesses can now reach new customers.
+          Buyers and sellers can transact with confidence through Orivalt's
+          escrow. Local sellers can finally build trust and reputation online.
+          We are redefining what it means to go to market—not just a place to
+          sell, but a place to belong.
         </p>
 
-        {/* CTA */}
-        <button
-          className="
-            bg-white text-indigo-700 
-            px-8 py-4 rounded-2xl 
-            text-lg font-semibold 
-            shadow-xl hover:shadow-2xl 
-            transition-all hover:scale-105
-          "
+        <a
+          href="#download"
+          className="inline-block px-8 py-4 bg-black text-white rounded-xl text-lg font-semibold shadow-xl hover:opacity-90 transition"
         >
-          Join the Orija movement — Download the app
-        </button>
+          Join the Origia Movement — Download the App
+        </a>
       </div>
     </section>
-
     <div className=' relative bg-primary flex justify-center items-center flex-col gap-5 pb-30 pt-10 '>
               <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-transparent pointer-events-none" />
 
@@ -136,7 +111,7 @@ const Empower = () => {
     
       class="flex items-center gap-2 bg-white/10 backdrop-blur-xl text-white px-8 py- rounded-full font-semibold hover:scale-100 transition border border-blue-600 hover:scale-107 transition duration-300 ease-in-out transition active: active:scale-90 transition duration-300 ease-in-out">
        
-        <img src="/src/assets/images/appStore.png" alt="App Store" class="w-15 h-15 color-white" />
+        <img src="/images/appStore.png" alt="App Store" class="w-15 h-15 color-white" />
         App Store
       </motion.a>
       <motion.a href="#" 
@@ -148,7 +123,7 @@ const Empower = () => {
     viewport={{once:true, amount:0.8}}
     
       class="flex items-center gap-2 bg-orange-500 text-white px-8 py-1 rounded-full font-semibold hover:bg-green-600 hover:scale-107 transition duration-300 ease-in-out transition active: active:scale-90 transition duration-300 ease-in-out">
-        <img src="/src/assets/images/playStore.png" alt="Play Store" class="w-20 h-20" />
+        <img src="/images/playStore.png" alt="Play Store" class="w-20 h-20" />
         Play Store
       </motion.a>
     

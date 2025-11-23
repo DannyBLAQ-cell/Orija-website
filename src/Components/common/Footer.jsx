@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
     
-                       <img src="/src/assets/images/logoo.png" alt=""  className='w-40'/>
+                       <img src="/images/logoo.png" alt=""  className='w-40'/>
 
             <p className="text-sm text-neutral-400">A social marketplace for everyday hustlers. Connect, sell and build trust.</p>
           </div>

@@ -17,7 +17,7 @@ const Pay = () => {
           viewport={{ once: true }}
         >
           <img
-            src=' /src/assets/images/secure.png'
+            src=' /images/secure.png'
             alt="Orivault Mockup"
             className="w-full max-w-sm rounded-xl shadow-lg"
           />
