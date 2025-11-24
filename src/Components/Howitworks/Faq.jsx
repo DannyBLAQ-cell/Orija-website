@@ -5,7 +5,7 @@ const Faq = () => {
   
 <>
 <div className='flex flex-col gap-4 justify-center items-center'>
-    <h1 className='text-7xl font-bold primary'>
+    <h1 className='text-3xl md:text-7xl font-bold primary'>
     Frequently Asked Questions <br /> 
 </h1>
 <p className='text-lg'>

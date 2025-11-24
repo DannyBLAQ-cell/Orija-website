@@ -6,7 +6,7 @@ const About = () => {
   return (
 <>
 <div className='flex flex-col-reverse justify-center items-center'>
-<div className='flex flex-col  items-center gap-10 pt-40 pb-40  '>
+<div className='flex flex-col  items-center gap-10 pt-30 pb-40  '>
     <motion.h1>
  <h1 className=' text-5xl md:text-7xl primary font-bold'>What Is Orija?</h1>
 

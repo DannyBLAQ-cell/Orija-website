@@ -90,7 +90,7 @@ const Empower = () => {
                 transition={{duration:1, ease:'easeInOut'}}
              
              >
-            <h1 className='text-6xl text-center font-medium pt-25 text-white '>
+            <h1 className='text-3xl m-3 md:text-6xl text-center font-medium pt-25 text-white '>
               Be part of the new digital market movement. <br />
               Connect,trade and grow, all in one app.      
             </h1>

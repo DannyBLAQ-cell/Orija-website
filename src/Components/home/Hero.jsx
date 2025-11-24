@@ -5,7 +5,7 @@ const Hero = () => {
    <>
 
 
-    <div className="relative bg-[url('/images/dread-img.jpg')] bg-cover bg-center min-h-[700px] md:min-h-screen">
+    <div className="relative bg-[url('/images/dread-img.jpg')] bg-cover bg-center min-h-[800px] mb-20 md:min-h-screen">
 
       {/* OVERLAY */}
       <div className="absolute inset-0 bg-black/40 z-0"></div>
