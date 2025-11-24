@@ -350,7 +350,7 @@ We're commited to creating a safe, secure marketplace for everyone            </
 
     <div>
       <h1 className="font-semibold text-lg primary">Verified Sellers</h1>
-      <p className="text-sm tertiary">All selles go through our <br /> verification process</p>
+      <p className="text-sm tertiary">All sellers go through our <br /> verification process</p>
     </div>
   </div>
 
