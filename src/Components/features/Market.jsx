@@ -15,12 +15,12 @@ const Market = () => {
     <p className='text-center text-neutral-500 tertiary'>Powerful features designed to help you grow faster and sell more</p>
     </motion.div>
    
-    <div className='flex  justify-center pt-35 mb-40'>
+    <div className=' flex flex-col-reverse md:flex  justify-center pt-35 mb-40'>
 <motion.div 
   initial={{ x:-200, opacity:0}}
     whileInView={{x:0, opacity:1}} 
     transition={{ease:'easeInOut', duration:0.8, }}
-className='flex gap-5 flex-col md:ml-40 '>
+className='flex gap-5 flex-col m-3 md:ml-40 '>
 <h1 className='text-5xl font-medium  primary'>Marketplace Features</h1>
 <p className='text-neutral-500 text-medium'>
     Everything you need to showcase your products and reach <br />

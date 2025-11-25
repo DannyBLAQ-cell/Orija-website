@@ -5,7 +5,7 @@ import { Check, Star, ShoppingBag,  UserCheck ,MessageCircle,Image, Bell, Shield
 const Chat = () => {
   return (
   <>
-      <section className=" ,flex-col relative text-neutral-900 py-50 px-6 overflow-hidden md:flex  gap-35 items-center justify-center ">
+      <section className=" ,flex-col  relative text-neutral-900 py-50 px-6 overflow-hidden md:flex  gap-35 items-center justify-center ">
       {/* Background lights */}
       {/* <div className="absolute -top-20 left-10 w-[25rem] h-[25rem] bg-blue-500/30 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-10 w-[20rem] h-[20rem] bg-purple-500/30 rounded-full blur-3xl" /> */}
@@ -74,16 +74,16 @@ const Chat = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
-        className="max-w-2xl text-center"
+        className="max-w-2xl text-center mt-30 "
       >
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 primary">Chat That Builds Trust</h2>
+        <h2 className="text-4xl  md:text-5xl font-bold mb-4 primary">Chat That Builds Trust</h2>
         <p className="tertiary mb-6">
           Unlike typical marketplaces, Orija lets you chat directly with buyers or sellers. <br />
           Discuss deals, ask questions, share proof — all within the app.
           Conversations are <br /> part of the experience, making every transaction feel human and trustworthy.
         </p>
 
-        <ul className="text-left text-neutral-500 space-y-2 mb-8">
+        <ul className="text-center md:text-left text-neutral-500 space-y-2 mb-8">
           <li>💬 Direct in-app chat</li>
           <li>🖼️ Media sharing (photos, receipts, samples)</li>
           <li>🔔 Instant notifications</li>
