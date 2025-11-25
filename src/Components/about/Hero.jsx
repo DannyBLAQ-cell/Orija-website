@@ -89,8 +89,8 @@ hustlers,dreamers and does who make the everyday economy thrive.</p>
   </div>
 </div>
 <div className='bg-white pb-40'>
-<div className="relative bg-[url('./images/city.png')]  bg-cover bg-center h-screen ">
-  <div className="absolute inset-0 bg-white/10 backdrop-blur-[3px] pb-150"></div>
+<div className="relative bg-[url('/images/pic-6.jpg')]  bg-cover bg-center h-screen ">
+  <div className="absolute inset-0 bg-black/40 backdrop-blur-[3px] pb-150"></div>
   <motion.div 
     initial={{scale:0, opacity:0}}
                 whileInView={{scale:1, opacity:1}}

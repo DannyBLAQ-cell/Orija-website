@@ -455,7 +455,7 @@ We're commited to creating a safe, secure marketplace for everyone            </
          </motion.h1>
 
          <motion.p>
-            <p className='text-lg text-center alternate'>
+            <p className=' m-3 text-1xl md:text-lg text-center alternate'>
 Join thousands of successful etrepreneurs on Orija today</p>
            
              </motion.p>
