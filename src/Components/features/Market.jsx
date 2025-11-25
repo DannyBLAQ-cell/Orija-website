@@ -20,7 +20,7 @@ const Market = () => {
   initial={{ x:-200, opacity:0}}
     whileInView={{x:0, opacity:1}} 
     transition={{ease:'easeInOut', duration:0.8, }}
-className='flex gap-5 flex-col m-3 md:ml-40 '>
+className='flex gap-5 flex-col m-9 md:ml-40 '>
 <h1 className='text-5xl font-medium  primary'>Marketplace Features</h1>
 <p className='text-neutral-500 text-medium'>
     Everything you need to showcase your products and reach <br />
