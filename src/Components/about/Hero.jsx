@@ -54,7 +54,7 @@ hustlers,dreamers and does who make the everyday economy thrive.</p>
     <motion.div
       initial={{ x: -100, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
-      transition={{ ease: "easeInOut", duration: 0.8 }}
+      transition={{ ease: "easeIn", duration: 0.8 }}
       className="flex flex-col gap-6"
     >
       <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold primary leading-tight">
@@ -83,13 +83,13 @@ hustlers,dreamers and does who make the everyday economy thrive.</p>
       <img
         src="./images/dread-img.jpg"
         alt="Founder"
-        className="w-64 sm:w-80 lg:w-[420px] rounded-xl shadow-2xl object-cover"
+        className="w-64 sm:w-90 lg:w-[420px] rounded-xl shadow-2xl object-cover"
       />
     </motion.div>
   </div>
 </div>
 <div className='bg-white pb-40'>
-<div className="relative bg-[url('./images/city.png')] bg-cover bg-center h-screen ">
+<div className="relative bg-[url('./images/city.png')]  bg-cover bg-center h-screen ">
   <div className="absolute inset-0 bg-white/10 backdrop-blur-[3px] pb-150"></div>
   <motion.div 
     initial={{scale:0, opacity:0}}

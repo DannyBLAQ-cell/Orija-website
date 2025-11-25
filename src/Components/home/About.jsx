@@ -7,12 +7,20 @@ const About = () => {
 <>
 <div className='flex flex-col-reverse justify-center items-center'>
 <div className='flex flex-col  items-center gap-10 pt-30 pb-40  '>
-    <motion.h1>
+    <motion.h1
+     initial={{ y:-200, opacity:0}}
+    whileInView={{y:0, opacity:1}}
+    transition={{ease:'easeInOut', duration:0.8, }}
+    >
  <h1 className=' text-5xl md:text-7xl primary font-bold'>What Is Orija?</h1>
 
     </motion.h1>
 
     <motion.p
+ initial={{ scale:0, opacity:0}}
+    whileInView={{scale:1, opacity:1}}
+    transition={{ease:'easeInOut', duration:0.8, }}
+
     className=' m-5 flex justify-center items-center flex-col gap-8  shadow-xl p-7 rounded-xl hover: hover:scale-106 transition duration-300 ease-in-out cursor-pointer hover:backdrop-blur-md hover:bg-white/10 border border-secondary'
     >
         
@@ -69,8 +77,13 @@ className='h-auto h-160 w-210 rounded-2xl   '
 
 
   
-<div className='flex bg-white flex-col pt-40 justify-center items-center gap-5'>
-     <motion.h1>
+<div className='flex bg-white flex-col pt-10 justify-center items-center gap-5'>
+     <motion.h1
+      initial={{ y:-200, opacity:0}}
+    whileInView={{y:0, opacity:1}}
+    transition={{ease:'easeInOut', duration:0.8, }}
+     
+     >
         <h1 className='text-4xl md:text-6xl font-bold primary'>
             How Orija Works
         </h1>
@@ -85,7 +98,11 @@ className='h-auto h-160 w-210 rounded-2xl   '
              </motion.p>
 <section className="flex justify-center gap-20 pt-5 flex-wrap text-center pb-50">
   {/* 1️⃣ Step Card */}
-  <div className="flex flex-col items-center max-w-[250px] space-y-3">
+  < motion.div
+   initial={{ x:-300, opacity:0}}
+    whileInView={{x:0, opacity:1}}
+    transition={{ease:'easeInOut', duration:0.8, }}
+  className="flex flex-col items-center max-w-[250px] space-y-3">
     <h1 className="animate-bounce bg-tertiary rounded-full w-8 h-8 flex items-center justify-center font-bold text-white">1</h1>
 
     <div className="bg-secondary rounded-lg text-white p-5 inline-flex items-center justify-center">
@@ -96,10 +113,15 @@ className='h-auto h-160 w-210 rounded-2xl   '
       <h1 className="font-semibold text-lg primary">List Your Product</h1>
       <p className="text-sm text-neutral-400 tertiary">Create listings in minutes with our easy-to-use interface</p>
     </div>
-  </div>
+  </motion.div>
 
   {/* 2️⃣ Step Card */}
-  <div className="flex flex-col items-center max-w-[250px] space-y-3">
+  <motion.div
+    initial={{ scale:0, opacity:0}}
+    whileInView={{scale:1, opacity:1}}
+    transition={{ease:'easeInOut', duration:0.8, }}
+  
+  className="flex flex-col items-center max-w-[250px] space-y-3">
         <h1 className="animate-bounce bg-tertiary rounded-full w-8 h-8 flex items-center justify-center font-bold text-white">2</h1>
 
     <div className="bg-secondary rounded-lg text-white p-5 inline-flex items-center justify-center">
@@ -110,10 +132,15 @@ className='h-auto h-160 w-210 rounded-2xl   '
       <h1 className="font-semibold text-lg primary">Connect With Buyers</h1>
       <p className="text-sm text-neutral-500 tertiary">Chat directly and build relationships with your customers</p>
     </div>
-  </div>
+  </motion.div>
 
   {/* 3️⃣ Step Card */}
-  <div className="flex flex-col items-center max-w-[250px] space-y-3">
+  <motion.div
+    initial={{ x:300, opacity:0}}
+    whileInView={{x:0, opacity:1}}
+    transition={{ease:'easeInOut', duration:0.8, }}
+  
+  className="flex flex-col items-center max-w-[250px] space-y-3">
         <h1 className="animate-bounce bg-tertiary rounded-full w-8 h-8 flex items-center justify-center font-bold text-white">3</h1>
 
     <div className="bg-secondary rounded-lg text-white p-5 inline-flex items-center justify-center">
@@ -124,7 +151,7 @@ className='h-auto h-160 w-210 rounded-2xl   '
       <h1 className="font-semibold text-lg primary">Secure Payment</h1>
       <p className="text-sm text-neutral-500 tertiary">Get paid safely through OriVault escrow system</p>
     </div>
-  </div>
+  </motion.div>
 </section>
 
 
@@ -137,8 +164,8 @@ className='  pt-10 pb-40 bg-gray-50'>
     whileInView={{y:0, opacity:1}}
     transition={{ease:'easeInOut', duration:0.8, }}
     className='flex gap-5 flex-col '>
-         <h1 className='text-4xl md:text-6xl font-bold primary text-center'>Everything You Need to Succeed.</h1>
-    <p className='text-center tertiary'>Powerful features designed to help you grow faster and sell more</p>
+         <h1 className='text-4xl m-3 md:text-6xl font-bold primary text-center'>Everything You Need to Succeed.</h1>
+    <p className='text-center tertiary m-3'>Powerful features designed to help you grow faster and sell more</p>
     </motion.div>
    
 
@@ -328,7 +355,12 @@ all within the app.
   <ReviewSlider />
 
 <div className='flex bg-white flex-col pt-40 justify-center items-center gap-5'>
-     <motion.h1>
+     <motion.h1
+     
+       initial={{ y:-300, opacity:0}}
+    whileInView={{y:0, opacity:1}}
+    transition={{ease:'easeInOut', duration:0.8, }}
+     >
         <h1 className=' text-4xl md:text-6xl font-bold primary '>
             Built on Trust & Safety
         </h1>
@@ -342,7 +374,11 @@ We're commited to creating a safe, secure marketplace for everyone            </
              </motion.p>
 <section className="flex justify-center gap-20 pt-5 flex-wrap text-center pb-50">
   {/* 1️⃣ Step Card */}
-  <div className="flex flex-col items-center max-w-[250px] space-y-3">
+  <motion.div 
+    initial={{ scale:0, opacity:0}}
+    whileInView={{scale:1, opacity:1}}
+    transition={{ease:'easeInOut', duration:0.8, }}
+  className="flex flex-col items-center max-w-[250px] space-y-3">
 
     <div className="bg-secondary rounded-lg text-white p-5 inline-flex items-center justify-center">
       <VerifiedIcon className="w-7 h-10 text-white" />
@@ -352,10 +388,14 @@ We're commited to creating a safe, secure marketplace for everyone            </
       <h1 className="font-semibold text-lg primary">Verified Sellers</h1>
       <p className="text-sm tertiary">All sellers go through our <br /> verification process</p>
     </div>
-  </div>
+  </motion.div>
 
   {/* 2️⃣ Step Card */}
-  <div className="flex flex-col items-center max-w-[250px] space-y-3">
+  <motion.div 
+  initial={{ scale:0, opacity:0}}
+    whileInView={{scale:1, opacity:1}}
+    transition={{ease:'easeInOut', duration:0.8, }}
+  className="flex flex-col items-center max-w-[250px] space-y-3">
 
     <div className="bg-secondary rounded-lg text-white p-5 inline-flex items-center justify-center">
       <Shield className="w-7 h-10 text-white" />
@@ -365,10 +405,15 @@ We're commited to creating a safe, secure marketplace for everyone            </
       <h1 className="font-semibold text-lg primary">Secure Payments</h1>
       <p className="text-sm tertiary">OriVault escrow protects <br />every transaction</p>
     </div>
-  </div>
+  </motion.div>
 
   {/* 3️⃣ Step Card */}
-  <div className="flex flex-col items-center max-w-[250px] space-y-3">
+  <motion.div 
+   initial={{ scale:0, opacity:0}}
+    whileInView={{scale:1, opacity:1}}
+    transition={{ease:'easeInOut', duration:0.8, }}
+  
+  className="flex flex-col items-center max-w-[250px] space-y-3">
 
     <div className="bg-secondary rounded-lg text-white p-5 inline-flex items-center justify-center">
       <PersonStandingIcon className="w-7 h-10 text-white" />
@@ -378,9 +423,14 @@ We're commited to creating a safe, secure marketplace for everyone            </
       <h1 className="font-semibold text-lg primary">Buyer protection</h1>
       <p className="text-sm text-neutral-500 tertiary">30-day money-back <br /> guarantee on all purchases</p>
     </div>
-  </div>
+  </motion.div>
   {/* 4th slide */}
-  <div className="flex flex-col items-center max-w-[250px] space-y-3">
+  < motion.div 
+   initial={{ scale:0, opacity:0}}
+    whileInView={{scale:1, opacity:1}}
+    transition={{ease:'easeInOut', duration:0.8, }}
+  
+  className="flex flex-col items-center max-w-[250px] space-y-3">
 
     <div className="bg-secondary rounded-lg text-white p-5 inline-flex items-center justify-center">
       <StarIcon className="w-7 h-10 text-white" />
@@ -390,7 +440,7 @@ We're commited to creating a safe, secure marketplace for everyone            </
       <h1 className="font-semibold text-lg primary">Community <br />Standards</h1>
       <p className="text-sm tertiary">Trusted ratings and reviews <br /> from real users</p>
     </div>
-  </div>
+  </motion.div>
 </section>
 
 
