@@ -58,7 +58,7 @@ const hero = () => {
         >
           {/* Animated floating mockups */}
           <motion.img
-            src="public/images/4.png"
+            src="./images/4.png"
             alt="Orija Home"
             className="w-64 rounded-3xl shadow-2xl border border-white/20"
             animate={{ y: [0, -15, 0] }}
@@ -66,7 +66,7 @@ const hero = () => {
           />
 
           <motion.img
-            src="public/images/1.png"
+            src="./images/1.png"
             alt="Orija Chat"
             className="w-52 rounded-3xl shadow-2xl border border-white/20 absolute -right-6 top-16 hidden md:block"
             animate={{ y: [0, 15, 0] }}

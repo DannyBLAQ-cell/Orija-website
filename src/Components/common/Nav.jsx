@@ -13,7 +13,7 @@ const Nav = () => {
 
         {/* LOGO */}
         <div className="flex items-center gap-2">
-          <img src=" public/images/logoo.png" alt="Orija Logo" className="w-28" />
+          <img src=" ./images/logoo.png" alt="Orija Logo" className="w-28" />
         </div>
 
         {/* DESKTOP LINKS */}

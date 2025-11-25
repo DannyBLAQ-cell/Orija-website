@@ -46,7 +46,7 @@ const Hero = () => {
             href="#"
             className="flex items-center gap-3 bg-white/10 backdrop-blur-lg px-6 py-3 rounded-full border border-white/30 hover:scale-[1.05] transition duration-300 active:scale-95"
           >
-            <img src="public/images/appStore.png" alt="App Store" className="w-7 h-7 md:w-10 md:h-10" />
+            <img src="./images/appStore.png" alt="App Store" className="w-7 h-7 md:w-10 md:h-10" />
             <span className="font-semibold">App Store</span>
           </motion.a>
 
@@ -58,7 +58,7 @@ const Hero = () => {
             href="#"
             className="flex items-center gap-3 bg-secondary px-6 py-3 rounded-full font-semibold hover:bg-green-600 hover:scale-[1.05] transition duration-300 active:scale-95"
           >
-            <img src="public/images/playStore.png" alt="Play Store" className="w-7 h-7 md:w-10 md:h-10" />
+            <img src="./images/playStore.png" alt="Play Store" className="w-7 h-7 md:w-10 md:h-10" />
             <span>Play Store</span>
           </motion.a>
 

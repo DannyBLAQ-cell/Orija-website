@@ -9,7 +9,7 @@ const Post = () => {
         {/* Left: App Mockup */}
         <div className="flex-1 flex justify-center lg:justify-start">
           <img
-            src='public/images/post.png'
+            src='./images/post.png'
             alt="App Post Creation Mockup"
             className="w-full max-w-sm rounded-xl shadow-lg"
           />

@@ -68,7 +68,7 @@ className='flex gap-5 flex-col md:ml-40 '>
     className=""
   >
     <img
-      src="public/images/5-Photoroom.png"
+      src="./images/5-Photoroom.png"
       alt="Listing mockup"
       className="rounded-xl w-210 h-160 h-auto "
     />

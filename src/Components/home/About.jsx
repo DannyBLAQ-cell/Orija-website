@@ -50,7 +50,7 @@ street market in one app
 
  <div >
 
-<motion.img src="public/images/4-Photoroom.png" alt="" 
+<motion.img src="./images/4-Photoroom.png" alt="" 
 className='h-auto h-160 w-210 rounded-2xl   '
 
   animate={{
@@ -193,7 +193,7 @@ className='  pt-10 pb-40 bg-gray-50'>
     className=""
   >
     <img
-      src="public/images/5-Photoroom.png"
+      src="./images/5-Photoroom.png"
       alt="Listing mockup"
       className="rounded-xl w-210 h-160 h-auto "
     />
@@ -213,7 +213,7 @@ className='  pt-10 pb-40 bg-gray-50'>
         className=" "
       >
         <img
-          src="public/images/3-1-Photoroom.png"
+          src="./images/3-1-Photoroom.png"
           alt="Orivault"
           className="w-210 h-160 h-auto rounded-xl hover hover: cursor-pointer "
         />
@@ -315,7 +315,7 @@ all within the app.
     className=""
   >
     <img
-      src="public/images/1-Photoroom.png"
+      src="./images/1-Photoroom.png"
       alt="Listing mockup"
       className="rounded-xl w-210 h-160 h-auto"
     />

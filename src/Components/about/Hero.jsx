@@ -81,7 +81,7 @@ hustlers,dreamers and does who make the everyday economy thrive.</p>
       className="flex justify-center shrink-0"
     >
       <img
-        src="public/images/dread-img.jpg"
+        src="./images/dread-img.jpg"
         alt="Founder"
         className="w-64 sm:w-80 lg:w-[420px] rounded-xl shadow-2xl object-cover"
       />
@@ -89,7 +89,7 @@ hustlers,dreamers and does who make the everyday economy thrive.</p>
   </div>
 </div>
 <div className='bg-white pb-40'>
-<div className="relative bg-[url('public/images/city.png')] bg-cover bg-center h-screen ">
+<div className="relative bg-[url('./images/city.png')] bg-cover bg-center h-screen ">
   <div className="absolute inset-0 bg-white/10 backdrop-blur-[3px] pb-150"></div>
   <motion.div 
     initial={{scale:0, opacity:0}}
