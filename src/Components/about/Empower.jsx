@@ -23,35 +23,35 @@ const Empower = () => {
   <section className="relative py-32 bg-white overflow-hidden">
       {/* Floating scattered images */}
       <motion.img
-        src="/images/wall.jpg"
+        src="public/images/wall.jpg"
         variants={float}
         animate="animate"
         className="hidden md:block absolute top-10 left-10 w-40 h-40 object-cover rounded-2xl shadow-xl"
       />
 
       <motion.img
-        src="/images/graffiti.jpg"
+        src="public/images/graffiti.jpg"
         variants={float}
         animate="animate"
         className="hidden md:block absolute top-1/2 -translate-y-1/2 left-0 w-48 h-48 object-cover rounded-3xl shadow-lg"
       />
 
       <motion.img
-        src="/images/pic-6.jpg"
+        src="public/images/pic-6.jpg"
         variants={float}
         animate="animate"
         className="hidden md:block absolute bottom-10 left-24 w-36 h-36 object-cover rounded-2xl shadow-md"
       />
 
       <motion.img
-        src="/images/pic-3.jpg"
+        src="public/images/pic-3.jpg"
         variants={float}
         animate="animate"
         className="hidden md:block absolute top-24 right-10 w-44 h-44 object-cover rounded-3xl shadow-xl"
       />
 
       <motion.img
-        src="/images/pic-4.jpg"
+        src="public/images/pic-4.jpg"
         variants={float}
         animate="animate"
         className="hidden md:block absolute bottom-20 right-0 w-40 h-40 object-cover rounded-2xl shadow-lg"
@@ -64,7 +64,7 @@ const Empower = () => {
         </h2>
 
         <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-10">
-          From side hustles to full-time businesses, Origia gives people the
+          From side hustles to full-time businesses, Orija gives people the
           platform, tools, and trust they need to succeed in the digital
           economy. Thousands of small businesses can now reach new customers.
           Buyers and sellers can transact with confidence through Orivalt's
@@ -77,7 +77,7 @@ const Empower = () => {
           href="#download"
           className="inline-block px-8 py-4 bg-black text-white rounded-xl text-lg font-semibold shadow-xl hover:opacity-90 transition"
         >
-          Join the Origia Movement — Download the App
+          Join the Orija Movement — Download the App
         </a>
       </div>
     </section>
@@ -111,7 +111,7 @@ const Empower = () => {
     
       class="flex items-center gap-2 bg-white/10 backdrop-blur-xl text-white px-8 py- rounded-full font-semibold hover:scale-100 transition border border-blue-600 hover:scale-107 transition duration-300 ease-in-out transition active: active:scale-90 transition duration-300 ease-in-out">
        
-        <img src="/images/appStore.png" alt="App Store" class="w-15 h-15 color-white" />
+        <img src="public/images/appStore.png" alt="App Store" class="w-15 h-15 color-white" />
         App Store
       </motion.a>
       <motion.a href="#" 
@@ -123,7 +123,7 @@ const Empower = () => {
     viewport={{once:true, amount:0.8}}
     
       class="flex items-center gap-2 bg-orange-500 text-white px-8 py-1 rounded-full font-semibold hover:bg-green-600 hover:scale-107 transition duration-300 ease-in-out transition active: active:scale-90 transition duration-300 ease-in-out">
-        <img src="/images/playStore.png" alt="Play Store" class="w-20 h-20" />
+        <img src="public/images/playStore.png" alt="Play Store" class="w-20 h-20" />
         Play Store
       </motion.a>
     

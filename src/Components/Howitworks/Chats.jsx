@@ -17,7 +17,7 @@ const Chats = () => {
           viewport={{ once: true }}
         >
           <img
-            src='/images/chatt.png '
+            src='public/images/chatt.png '
             alt="Chat UI Mockup"
             className="w-full max-w-sm rounded-xl shadow-lg"
           />
